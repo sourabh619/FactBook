@@ -25,6 +25,11 @@ enum LocalizableStrings: String, Localizable {
     case network = "An error occured during request :"
     case parser = "Error while parsing json data"
     case missingService = "Missing service"
+    case errorOccured = "An error occured"
+    case somethingWentWrong = "Oops, something went wrong!"
+    case cancel = "Cancel"
+    case retry = "Retry"
+    case networkErrorExplanation = "Network error "
     
     var tableName: String {
         return "Localizable"

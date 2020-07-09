@@ -20,8 +20,7 @@ class RequestHandler {
                         ParserHelper.parse(data: data, completion: completion)
                         break
                     case .failure(let error) :
-                        print("Network error \(error)")
-                        completion(.failure(.network(string: "Network error " + error.localizedDescription)))
+                        completion(.failure(.network(string: LocalizableStrings.networkErrorExplanation.localized + error.localizedDescription)))
                         break
                     }
                 })

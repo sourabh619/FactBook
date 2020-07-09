@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A322DE1EF1D5BB34EA6296C /* Pods_FactBook_FactBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7BA1C3001854FAC02CEFF /* Pods_FactBook_FactBookUITests.framework */; };
-		4DC00323946F08E29471FDD3 /* Pods_FactBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55EF1CECC28E75C65EEEBE8 /* Pods_FactBook.framework */; };
+		7760F3E7A31C189DDCEEC29E /* Pods_FactBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A67CAE28D8A4F972BF47FC /* Pods_FactBook.framework */; };
 		8B8A82F024B6BDAB001792CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A82EF24B6BDAB001792CF /* AppDelegate.swift */; };
 		8B8A82F224B6BDAB001792CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A82F124B6BDAB001792CF /* SceneDelegate.swift */; };
 		8B8A82F924B6BDAF001792CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A82F824B6BDAF001792CF /* Assets.xcassets */; };
@@ -33,7 +32,14 @@
 		8B8A834C24B6DDBD001792CF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A834B24B6DDBD001792CF /* String+Extensions.swift */; };
 		8B8A834E24B6DF05001792CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A834D24B6DF05001792CF /* Localizable.strings */; };
 		8B8A835024B6DF7B001792CF /* FactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A834F24B6DF7B001792CF /* FactsService.swift */; };
-		92C412D0B124A798FC86C01C /* Pods_FactBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7964B79F5063DF72A60A24A1 /* Pods_FactBookTests.framework */; };
+		8B8A835224B70B5A001792CF /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835124B70B5A001792CF /* FactsViewModel.swift */; };
+		8B8A835424B70B86001792CF /* FactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835324B70B86001792CF /* FactsDataSource.swift */; };
+		8B8A835624B70BA6001792CF /* FactsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835524B70BA6001792CF /* FactsDelegate.swift */; };
+		8B8A835824B70BEB001792CF /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835724B70BEB001792CF /* FactTableViewCell.swift */; };
+		8B8A835A24B70C6D001792CF /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835924B70C6D001792CF /* UILabel+Extensions.swift */; };
+		8B8A835C24B70CB5001792CF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */; };
+		8B8A835E24B70CD7001792CF /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */; };
+		8B8A836024B70D6C001792CF /* FactListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835F24B70D6C001792CF /* FactListContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A01CED83E03968AE1A04B24 /* Pods-FactBook-FactBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook-FactBookUITests.release.xcconfig"; path = "Target Support Files/Pods-FactBook-FactBookUITests/Pods-FactBook-FactBookUITests.release.xcconfig"; sourceTree = "<group>"; };
-		327A65CEB2107F1E295A9886 /* Pods-FactBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBookTests.release.xcconfig"; path = "Target Support Files/Pods-FactBookTests/Pods-FactBookTests.release.xcconfig"; sourceTree = "<group>"; };
-		38D7BA1C3001854FAC02CEFF /* Pods_FactBook_FactBookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactBook_FactBookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7964B79F5063DF72A60A24A1 /* Pods_FactBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A67CAE28D8A4F972BF47FC /* Pods_FactBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8A82EC24B6BDAB001792CF /* FactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8A82EF24B6BDAB001792CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8A82F124B6BDAB001792CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,11 +91,16 @@
 		8B8A834B24B6DDBD001792CF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		8B8A834D24B6DF05001792CF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8B8A834F24B6DF7B001792CF /* FactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsService.swift; sourceTree = "<group>"; };
+		8B8A835124B70B5A001792CF /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+		8B8A835324B70B86001792CF /* FactsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDataSource.swift; sourceTree = "<group>"; };
+		8B8A835524B70BA6001792CF /* FactsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDelegate.swift; sourceTree = "<group>"; };
+		8B8A835724B70BEB001792CF /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		8B8A835924B70C6D001792CF /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		8B8A835F24B70D6C001792CF /* FactListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactListContainer.swift; sourceTree = "<group>"; };
 		C1DA2BB133C7D9666A5746CD /* Pods-FactBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.release.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.release.xcconfig"; sourceTree = "<group>"; };
-		C82A014E85B723A44A9F1786 /* Pods-FactBook-FactBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook-FactBookUITests.debug.xcconfig"; path = "Target Support Files/Pods-FactBook-FactBookUITests/Pods-FactBook-FactBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E36E4FBC44177EC9367FBE4C /* Pods-FactBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBookTests.debug.xcconfig"; path = "Target Support Files/Pods-FactBookTests/Pods-FactBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9FA1012C75EC95626D9203D /* Pods-FactBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.debug.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.debug.xcconfig"; sourceTree = "<group>"; };
-		F55EF1CECC28E75C65EEEBE8 /* Pods_FactBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC00323946F08E29471FDD3 /* Pods_FactBook.framework in Frameworks */,
+				7760F3E7A31C189DDCEEC29E /* Pods_FactBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C412D0B124A798FC86C01C /* Pods_FactBookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A322DE1EF1D5BB34EA6296C /* Pods_FactBook_FactBookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,10 +134,6 @@
 			children = (
 				E9FA1012C75EC95626D9203D /* Pods-FactBook.debug.xcconfig */,
 				C1DA2BB133C7D9666A5746CD /* Pods-FactBook.release.xcconfig */,
-				C82A014E85B723A44A9F1786 /* Pods-FactBook-FactBookUITests.debug.xcconfig */,
-				1A01CED83E03968AE1A04B24 /* Pods-FactBook-FactBookUITests.release.xcconfig */,
-				E36E4FBC44177EC9367FBE4C /* Pods-FactBookTests.debug.xcconfig */,
-				327A65CEB2107F1E295A9886 /* Pods-FactBookTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -139,9 +141,7 @@
 		8196502A3B626E5725A76EA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F55EF1CECC28E75C65EEEBE8 /* Pods_FactBook.framework */,
-				38D7BA1C3001854FAC02CEFF /* Pods_FactBook_FactBookUITests.framework */,
-				7964B79F5063DF72A60A24A1 /* Pods_FactBookTests.framework */,
+				27A67CAE28D8A4F972BF47FC /* Pods_FactBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +257,10 @@
 			isa = PBXGroup;
 			children = (
 				8B8A82FA24B6BDAF001792CF /* LaunchScreen.storyboard */,
+				8B8A835724B70BEB001792CF /* FactTableViewCell.swift */,
+				8B8A835924B70C6D001792CF /* UILabel+Extensions.swift */,
+				8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */,
+				8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +268,9 @@
 		8B8A832524B6C458001792CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8B8A835124B70B5A001792CF /* FactsViewModel.swift */,
+				8B8A835324B70B86001792CF /* FactsDataSource.swift */,
+				8B8A835524B70BA6001792CF /* FactsDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				8B8A832724B6C57A001792CF /* FactsViewController.swift */,
+				8B8A835F24B70D6C001792CF /* FactListContainer.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,7 +347,7 @@
 				8B8A82E824B6BDAB001792CF /* Sources */,
 				8B8A82E924B6BDAB001792CF /* Frameworks */,
 				8B8A82EA24B6BDAB001792CF /* Resources */,
-				7BD94BBEBC8D352EAD78B80E /* [CP] Embed Pods Frameworks */,
+				BCC59D7C01D1CE371CE8BA31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +362,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B8A831924B6BDB0001792CF /* Build configuration list for PBXNativeTarget "FactBookTests" */;
 			buildPhases = (
-				BD8F60C70B8AF38C9E5A105D /* [CP] Check Pods Manifest.lock */,
 				8B8A82FE24B6BDAF001792CF /* Sources */,
 				8B8A82FF24B6BDAF001792CF /* Frameworks */,
 				8B8A830024B6BDAF001792CF /* Resources */,
@@ -373,11 +380,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B8A831C24B6BDB0001792CF /* Build configuration list for PBXNativeTarget "FactBookUITests" */;
 			buildPhases = (
-				5E8688D2EF275DB4647C92CA /* [CP] Check Pods Manifest.lock */,
 				8B8A830924B6BDB0001792CF /* Sources */,
 				8B8A830A24B6BDB0001792CF /* Frameworks */,
 				8B8A830B24B6BDB0001792CF /* Resources */,
-				AD628F763DC87254E92688C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -460,29 +465,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5E8688D2EF275DB4647C92CA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FactBook-FactBookUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BD94BBEBC8D352EAD78B80E /* [CP] Embed Pods Frameworks */ = {
+		BCC59D7C01D1CE371CE8BA31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,45 +480,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FactBook/Pods-FactBook-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD628F763DC87254E92688C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FactBook-FactBookUITests/Pods-FactBook-FactBookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FactBook-FactBookUITests/Pods-FactBook-FactBookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FactBook-FactBookUITests/Pods-FactBook-FactBookUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD8F60C70B8AF38C9E5A105D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FactBookTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D83D3F134CC5F7199B7EA00B /* [CP] Check Pods Manifest.lock */ = {
@@ -567,25 +511,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8A835E24B70CD7001792CF /* UIImageView+Extensions.swift in Sources */,
 				8B8A833824B6CEFC001792CF /* GenericDelegate.swift in Sources */,
 				8B8A832E24B6C90B001792CF /* Constants.swift in Sources */,
+				8B8A835C24B70CB5001792CF /* UIView+Extensions.swift in Sources */,
 				8B8A833024B6CC6F001792CF /* Fact.swift in Sources */,
 				8B8A82F024B6BDAB001792CF /* AppDelegate.swift in Sources */,
 				8B8A834C24B6DDBD001792CF /* String+Extensions.swift in Sources */,
 				8B8A82F224B6BDAB001792CF /* SceneDelegate.swift in Sources */,
 				8B8A834924B6DCB9001792CF /* EndPoint.swift in Sources */,
 				8B8A833224B6CD1B001792CF /* FactsInfo.swift in Sources */,
+				8B8A836024B70D6C001792CF /* FactListContainer.swift in Sources */,
 				8B8A834724B6DCAD001792CF /* RequestHandler.swift in Sources */,
 				8B8A832824B6C57A001792CF /* FactsViewController.swift in Sources */,
 				8B8A835024B6DF7B001792CF /* FactsService.swift in Sources */,
 				8B8A832B24B6C5B2001792CF /* AppHelper.swift in Sources */,
+				8B8A835A24B70C6D001792CF /* UILabel+Extensions.swift in Sources */,
+				8B8A835224B70B5A001792CF /* FactsViewModel.swift in Sources */,
 				8B8A833424B6CDE9001792CF /* DynamicValue.swift in Sources */,
 				8B8A833F24B6DAB6001792CF /* ErrorResult.swift in Sources */,
 				8B8A834324B6DC6B001792CF /* RequestFactory.swift in Sources */,
 				8B8A834124B6DBAD001792CF /* ParcerHelper.swift in Sources */,
+				8B8A835824B70BEB001792CF /* FactTableViewCell.swift in Sources */,
 				8B8A833624B6CEEC001792CF /* GenericDataSource.swift in Sources */,
 				8B8A834524B6DC9F001792CF /* RequestService.swift in Sources */,
 				8B8A833D24B6DAA5001792CF /* Result.swift in Sources */,
+				8B8A835624B70BA6001792CF /* FactsDelegate.swift in Sources */,
+				8B8A835424B70B86001792CF /* FactsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,7 +738,6 @@
 		};
 		8B8A831A24B6BDB0001792CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E36E4FBC44177EC9367FBE4C /* Pods-FactBookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -808,7 +759,6 @@
 		};
 		8B8A831B24B6BDB0001792CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 327A65CEB2107F1E295A9886 /* Pods-FactBookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -830,7 +780,6 @@
 		};
 		8B8A831D24B6BDB0001792CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C82A014E85B723A44A9F1786 /* Pods-FactBook-FactBookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -850,7 +799,6 @@
 		};
 		8B8A831E24B6BDB0001792CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A01CED83E03968AE1A04B24 /* Pods-FactBook-FactBookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

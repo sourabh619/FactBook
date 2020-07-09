@@ -5,3 +5,13 @@
   Created by Sourabh Nag on 09/07/20.
   Copyright © 2020 Sourabh Nag. All rights reserved.
 */
+
+"URL format is invalid" = "URL format is invalid";
+"An error occured during request :" = "An error occured during request :";
+"Error while parsing json data" = "Error while parsing json data";
+"Missing service" = "Missing service";
+"An error occured" = "An error occured";
+"Oops, something went wrong!" = "Oops, something went wrong!";
+"Cancel" = "Cancel";
+"Retry" = "Retry";
+"Network error " = "Network error ";

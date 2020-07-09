@@ -23,9 +23,21 @@ Branch factbook-dev
 3.3 Created DynamicValue Model to add observers to listen to the data changes (Observer Pattern)
 3.4 Created GenericDataSource and Generic delegate to give the ownership of the model to viewModel and view to UIViewController
 
-4.0 Worked on the Data Layer. Build the Network class, Service class, Request manager, network result handler.
+4. Worked on the Data Layer. Build the Network class, Service class, Request manager, network result handler.
 Switched branches before this can a breaking functionality in the stable code we are having.
 RequestService - Get the response from the server in the form of data
 Request handler - Parse the data and stores it into the generic type for passing it to the service class.
 FactsService - Interprets the generic type as FactsInfo and finally viewModel utilizes it. My next task is making Presentation Layer
 Added reachability Library
+
+5. Worked on the Presentation Layer
+5.1 FactsViewController - Owner of the FactsViewModel , dataSource and delegate
+      *Set up view, container view, data listeners in this class
+5.2 FactListContainer - Owner of the tableView in which the fact list will be presented
+5.3 FactsViewModel - Owner of the data model, responsible for calling the facts service, responsible for updating view and error handling
+5.4 FactsDataSource - Responsible for showing data to the list 
+5.5 FactsDelegate - Responsible for listening to the touch event on the tableviewcell
+5.6 FactTableViewCell - Fact cell Responsible for displaying the cell
+5.7 Many extensions have been created to help reuse most of the things
+
+

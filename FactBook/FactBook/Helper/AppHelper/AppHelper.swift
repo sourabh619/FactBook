@@ -26,4 +26,11 @@ class AppHelper {
         return window
     }
     
+    func showAlert(on controller: UIViewController?,retryAction: @escaping(UIAlertAction) -> ()) {
+        let alertController = UIAlertController(title: LocalizableStrings.errorOccured.localized, message: LocalizableStrings.somethingWentWrong.localized, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: LocalizableStrings.retry.localized, style: .default, handler: retryAction))
+        alertController.addAction(UIAlertAction(title: LocalizableStrings.cancel.localized, style: .cancel, handler: nil))
+        controller?.present(alertController, animated: true, completion: nil)
+    }
+    
 }

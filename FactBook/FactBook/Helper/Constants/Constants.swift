@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 struct Constants {
     
@@ -15,6 +16,22 @@ struct Constants {
         
         struct Color {
             static let navigationBar = UIColor(red: 241/255, green: 140/255, blue: 140/255, alpha: 1)
+            static let lightTextColor = UIColor.darkGray
+        }
+        
+        struct Layer {
+            static let cornerRadius:CGFloat = 10
+        }
+        
+        struct Image {
+            static let placeholder = UIImage(named: "picture")
+        }
+        
+        struct Font {
+            static let small = UIFont.systemFont(ofSize: 14)
+            static let smallBold = UIFont.boldSystemFont(ofSize: 14)
+            static let medium = UIFont.systemFont(ofSize: 20)
+            static let mediumBold = UIFont.boldSystemFont(ofSize: 20)
         }
         
     }
