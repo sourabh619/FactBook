@@ -16,8 +16,7 @@ Steps:
 2.3 Added AppHelper and a function to setup the root window with the root view controller
 2.4 Added constants file for theme configuration
 
-3. At this stage we'll switch to the development branch as we are ready to create our models for the project.
-Branch factbook-dev
+3. At this stage we are ready to create our models for the project.
 3.1 Created Fact Model to capture all the facts that are coming in the response. Used encapsulation so that no data is changed at runtime if there is some attack.
 3.2 Created FactInfo Model to capture all the details related to facts that are coming in the response. Used encapsulation so that no data is changed at runtime if there is some attack.
 3.3 Created DynamicValue Model to add observers to listen to the data changes (Observer Pattern)
@@ -39,5 +38,25 @@ Added reachability Library
 5.5 FactsDelegate - Responsible for listening to the touch event on the tableviewcell
 5.6 FactTableViewCell - Fact cell Responsible for displaying the cell
 5.7 Many extensions have been created to help reuse most of the things
+
+6. Wrote Test cases:
+6.1. ViewModelTests : 
+6.1.1 No Service Test
+6.1.2 Fetching Facts success test
+6.1.3 No Facts on return test
+
+6.2 DataSource Test:
+6.2.1 Empty Value Test
+6.2.2 Correct value test
+6.2.3 UITableViewCell return test
+
+6.3 ServiceTests:
+6.3.1 Cancel request test
+
+6.4 ParserTests:
+6.4.1 No Data Test
+6.4.2 Wrong Data Test
+
+- Generic value given a more sensible name
 
 

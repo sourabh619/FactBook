@@ -12,7 +12,7 @@ import UIKit
 class FactListContainer: UIView {
     
     private var dataSource: FactsDataSource?
-    private var refreshControl:UIRefreshControl?
+    private var refreshControl: UIRefreshControl?
     
     override init(frame: CGRect) {
         self.dataSource = nil
@@ -26,7 +26,7 @@ class FactListContainer: UIView {
         self.constraintsInit()
     }
     
-    init(dataSource: FactsDataSource,delegate: FactsDelegate, refreshControl:UIRefreshControl) {
+    init(dataSource: FactsDataSource, delegate: FactsDelegate, refreshControl: UIRefreshControl) {
         self.dataSource = dataSource
         super.init(frame: .zero)
         

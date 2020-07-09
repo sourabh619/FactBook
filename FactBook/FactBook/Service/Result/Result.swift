@@ -7,7 +7,7 @@
 //
 
 ///This will be our generic result type. We'll passing it around to make our code more diverse and readable
-enum Result<T,E:Error> {
+enum Result<T, E: Error> {
     case success(T)
     case failure(E)
 }

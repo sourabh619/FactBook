@@ -9,10 +9,10 @@
 import Foundation
 
 protocol FactsServiceProtocol:class {
-    func fetchFacts(_ completion:@escaping((Result<FactsInfo,ErrorResult>) -> Void))
+    func fetchFacts(_ completion: @escaping((Result<FactsInfo,ErrorResult>) -> Void))
 }
 
-final class FactsService:RequestHandler, FactsServiceProtocol {
+final class FactsService: RequestHandler, FactsServiceProtocol {
     
     static let shared = FactsService()
     var task:URLSessionTask?

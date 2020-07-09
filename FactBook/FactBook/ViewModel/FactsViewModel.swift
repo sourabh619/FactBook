@@ -13,7 +13,7 @@ struct FactsViewModel {
     weak var dataSource: GenericDataSource<FactsInfo>?
     weak var delegate: GenericDelegate<Int>?
     weak var service: FactsServiceProtocol?
-    var onErrorHandling:((ErrorResult?) -> Void)?
+    var onErrorHandling: ((ErrorResult?) -> Void)?
     
     init(service: FactsServiceProtocol = FactsService.shared,dataSource: GenericDataSource<FactsInfo>, delegate:GenericDelegate<Int>) {
         self.dataSource = dataSource

@@ -7,7 +7,7 @@
 //
 
 /// This will be our custom error result type 
-enum ErrorResult:Error {
+enum ErrorResult: Error {
     case network(string:String)
     case parser(string:String)
     case custom(string:String)

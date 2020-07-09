@@ -15,7 +15,7 @@ class FactsViewController: UIViewController {
     private var containerView: FactListContainer!
     private let refreshControl = UIRefreshControl()
     
-    lazy private var viewModel : FactsViewModel = {
+    lazy private var viewModel: FactsViewModel = {
         let viewModel = FactsViewModel(dataSource: dataSource, delegate: delegate)
         return viewModel
     }()
@@ -39,12 +39,12 @@ class FactsViewController: UIViewController {
     
     private func setUpContainerView() {
         refreshControl.addTarget(self, action: #selector(loadData(_:)), for: .valueChanged)
-        containerView = FactListContainer(dataSource: dataSource,delegate: delegate,refreshControl: refreshControl)
+        containerView = FactListContainer(dataSource: dataSource, delegate: delegate,refreshControl: refreshControl)
         view.addSubview(containerView)
-        containerView.leadingAnchor.constraint(equalTo:self.view.leadingAnchor).isActive = true
-        containerView.trailingAnchor.constraint(equalTo:self.view.trailingAnchor).isActive = true
-        containerView.topAnchor.constraint(equalTo:self.view.topAnchor).isActive = true
-        containerView.bottomAnchor.constraint(equalTo:self.view.bottomAnchor).isActive = true
+        containerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        containerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        containerView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
     private func setUpListeners() {

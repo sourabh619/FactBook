@@ -9,7 +9,7 @@
 import Foundation
 
 /// By making this generic delegate we are restricting our viweModel to get the full ownership of the tableview delegate. This'll capture the index of the selected uitableviewcell.
-class GenericDelegate<T>:NSObject {
+class GenericDelegate<Element>: NSObject {
     var didSelectItem:((Int) -> ())?
 }
 

@@ -12,7 +12,6 @@
 		8B8A82F224B6BDAB001792CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A82F124B6BDAB001792CF /* SceneDelegate.swift */; };
 		8B8A82F924B6BDAF001792CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A82F824B6BDAF001792CF /* Assets.xcassets */; };
 		8B8A82FC24B6BDAF001792CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8A82FA24B6BDAF001792CF /* LaunchScreen.storyboard */; };
-		8B8A830724B6BDAF001792CF /* FactBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A830624B6BDAF001792CF /* FactBookTests.swift */; };
 		8B8A831224B6BDB0001792CF /* FactBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A831124B6BDB0001792CF /* FactBookUITests.swift */; };
 		8B8A832824B6C57A001792CF /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A832724B6C57A001792CF /* FactsViewController.swift */; };
 		8B8A832B24B6C5B2001792CF /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A832A24B6C5B2001792CF /* AppHelper.swift */; };
@@ -40,6 +39,10 @@
 		8B8A835C24B70CB5001792CF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */; };
 		8B8A835E24B70CD7001792CF /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */; };
 		8B8A836024B70D6C001792CF /* FactListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A835F24B70D6C001792CF /* FactListContainer.swift */; };
+		8B8A836224B72BF7001792CF /* FactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836124B72BF7001792CF /* FactsViewModelTests.swift */; };
+		8B8A836424B72C33001792CF /* FactBookDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836324B72C33001792CF /* FactBookDataSourceTests.swift */; };
+		8B8A836624B72C5B001792CF /* FactBookServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836524B72C5B001792CF /* FactBookServiceTests.swift */; };
+		8B8A836824B72C7A001792CF /* FactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836724B72C7A001792CF /* FactTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,6 @@
 		8B8A82FB24B6BDAF001792CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8A82FD24B6BDAF001792CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8A830224B6BDAF001792CF /* FactBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B8A830624B6BDAF001792CF /* FactBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookTests.swift; sourceTree = "<group>"; };
 		8B8A830824B6BDAF001792CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8A830D24B6BDB0001792CF /* FactBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8A831124B6BDB0001792CF /* FactBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookUITests.swift; sourceTree = "<group>"; };
@@ -99,6 +101,10 @@
 		8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		8B8A835F24B70D6C001792CF /* FactListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactListContainer.swift; sourceTree = "<group>"; };
+		8B8A836124B72BF7001792CF /* FactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModelTests.swift; sourceTree = "<group>"; };
+		8B8A836324B72C33001792CF /* FactBookDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookDataSourceTests.swift; sourceTree = "<group>"; };
+		8B8A836524B72C5B001792CF /* FactBookServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookServiceTests.swift; sourceTree = "<group>"; };
+		8B8A836724B72C7A001792CF /* FactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTests.swift; sourceTree = "<group>"; };
 		C1DA2BB133C7D9666A5746CD /* Pods-FactBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.release.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.release.xcconfig"; sourceTree = "<group>"; };
 		E9FA1012C75EC95626D9203D /* Pods-FactBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.debug.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +193,10 @@
 		8B8A830524B6BDAF001792CF /* FactBookTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B8A830624B6BDAF001792CF /* FactBookTests.swift */,
+				8B8A836124B72BF7001792CF /* FactsViewModelTests.swift */,
+				8B8A836324B72C33001792CF /* FactBookDataSourceTests.swift */,
+				8B8A836524B72C5B001792CF /* FactBookServiceTests.swift */,
+				8B8A836724B72C7A001792CF /* FactTests.swift */,
 				8B8A830824B6BDAF001792CF /* Info.plist */,
 			);
 			path = FactBookTests;
@@ -409,6 +418,7 @@
 					};
 					8B8A830124B6BDAF001792CF = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 8B8A82EB24B6BDAB001792CF;
 					};
 					8B8A830C24B6BDB0001792CF = {
@@ -545,7 +555,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8A830724B6BDAF001792CF /* FactBookTests.swift in Sources */,
+				8B8A836224B72BF7001792CF /* FactsViewModelTests.swift in Sources */,
+				8B8A836424B72C33001792CF /* FactBookDataSourceTests.swift in Sources */,
+				8B8A836624B72C5B001792CF /* FactBookServiceTests.swift in Sources */,
+				8B8A836824B72C7A001792CF /* FactTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +754,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FactBookTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -751,6 +765,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sourabh.FactBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactBook.app/FactBook";
@@ -762,6 +777,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FactBookTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;

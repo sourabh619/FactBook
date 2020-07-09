@@ -19,14 +19,14 @@ class AppHelper {
     func set(rootController: UIViewController, to window: UIWindow) -> UIWindow {
         let navigationController = UINavigationController(rootViewController: rootController)
         navigationController.navigationBar.barTintColor = Constants.Theme.Color.navigationBar
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController.navigationBar.titleTextAttributes = textAttributes
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         return window
     }
     
-    func showAlert(on controller: UIViewController?,retryAction: @escaping(UIAlertAction) -> ()) {
+    func showAlert(on controller: UIViewController?, retryAction: @escaping(UIAlertAction) -> ()) {
         let alertController = UIAlertController(title: LocalizableStrings.errorOccured.localized, message: LocalizableStrings.somethingWentWrong.localized, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: LocalizableStrings.retry.localized, style: .default, handler: retryAction))
         alertController.addAction(UIAlertAction(title: LocalizableStrings.cancel.localized, style: .cancel, handler: nil))
