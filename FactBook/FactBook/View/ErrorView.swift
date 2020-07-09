@@ -27,28 +27,29 @@ class ErrorView: UIView {
         constraintsInit()
     }
     
-    let refreshButton: UIButton = {
+    private let refreshButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(LocalizableStrings.retry.localized, for: .normal)
         button.setTitleColor(Constants.Theme.Color.navigationBar, for: .normal)
         button.addTarget(self, action: #selector(refreshFacts(_:)), for: .touchUpInside)
+        button.titleLabel?.font = Constants.Theme.Font.mediumBold
         return button
     }()
     
-    let noInternetConnetionLabel: ThemeLabel = {
+    private let noInternetConnetionLabel: ThemeLabel = {
         let label = ThemeLabel()
         label.text = LocalizableStrings.somethingWentWrong.localized
         return label
     }()
     
-    let parentView: UIView = {
+    private let parentView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    func constraintsInit() {
+    private func constraintsInit() {
         addSubview(parentView)
         let stackView = UIStackView(arrangedSubviews: [noInternetConnetionLabel,refreshButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false

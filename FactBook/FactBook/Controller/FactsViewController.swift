@@ -70,17 +70,8 @@ class FactsViewController: UIViewController {
     
     private func showErrorView() {
         self.hideErrorView()
-        errorView = ErrorView(frame: .zero)
-        errorView?.delegate = self
-        errorView?.translatesAutoresizingMaskIntoConstraints = false
-        guard let errorView = errorView else {return}
-        view.addSubview(errorView)
-        
-        errorView.topAnchor.constraint(equalTo: self.containerView.topAnchor, constant:0).isActive = true
-        errorView.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant:0).isActive = true
-        errorView.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor, constant:0).isActive = true
-        errorView.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor, constant:0).isActive = true
-        self.view.layoutIfNeeded()
+        self.errorView = self.view.attachErrorView()
+        self.errorView?.delegate = self
     }
     
     private func hideErrorView() {

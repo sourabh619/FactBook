@@ -26,3 +26,19 @@ class ContainerView: UIView {
     }
     
 }
+
+extension UIView {
+    
+    func attachErrorView() -> ErrorView {
+        let errorView = ErrorView(frame: .zero)
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(errorView)
+        errorView.topAnchor.constraint(equalTo: self.topAnchor, constant:0).isActive = true
+        errorView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant:0).isActive = true
+        errorView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant:0).isActive = true
+        errorView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant:0).isActive = true
+        self.layoutIfNeeded()
+        return errorView
+    }
+    
+}
