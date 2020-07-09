@@ -41,4 +41,15 @@ extension UIView {
         return errorView
     }
     
+    func attachSpinner() -> UIActivityIndicatorView {
+        let spinner = UIActivityIndicatorView(style: .gray)
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.startAnimating()
+        self.addSubview(spinner)
+
+        spinner.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        return spinner
+    }
+    
 }

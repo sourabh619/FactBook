@@ -15,6 +15,7 @@ class FactsViewController: UIViewController {
     private var containerView: FactListContainer!
     private let refreshControl = UIRefreshControl()
     private var errorView:ErrorView?
+    private var spinner:UIActivityIndicatorView?
     
     lazy private var viewModel: FactsViewModel = {
         let viewModel = FactsViewModel(dataSource: dataSource, delegate: delegate)
@@ -31,6 +32,7 @@ class FactsViewController: UIViewController {
         view.backgroundColor = .white
         self.setUpContainerView()
         self.setUpListeners()
+        self.spinner = self.view.attachSpinner()
         self.viewModel.fetchFacts()
     }
     
@@ -52,6 +54,8 @@ class FactsViewController: UIViewController {
         self.dataSource.data.addObserver(self) {[weak self] (factInfo) in
             DispatchQueue.main.async {
                 self?.hideErrorView()
+                self?.spinner?.removeFromSuperview()
+                self?.spinner = nil
                 self?.title = factInfo.first?.title ?? ""
                 self?.refreshControl.endRefreshing()
                 self?.containerView.reloadData()
@@ -60,6 +64,8 @@ class FactsViewController: UIViewController {
         
         self.viewModel.onErrorHandling = { [weak self] error in
             DispatchQueue.main.async {
+                self?.spinner?.removeFromSuperview()
+                self?.spinner = nil
                 self?.refreshControl.endRefreshing()
                 if self?.viewModel.dataCount() == 0 {
                     self?.showErrorView()
