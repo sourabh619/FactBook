@@ -17,6 +17,7 @@ struct Constants {
         struct Color {
             static let navigationBar = UIColor(red: 241/255, green: 140/255, blue: 140/255, alpha: 1)
             static let lightTextColor = UIColor.darkGray
+            static let darkColor = UIColor.black
         }
         
         struct Layer {

@@ -40,6 +40,7 @@ class ErrorView: UIView {
     private let noInternetConnetionLabel: ThemeLabel = {
         let label = ThemeLabel()
         label.text = LocalizableStrings.somethingWentWrong.localized
+        label.textColor = Constants.Theme.Color.lightTextColor
         return label
     }()
     

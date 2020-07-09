@@ -22,7 +22,6 @@ struct FactsViewModel {
     }
     
     func fetchFacts() {
-        
         guard let service = service else {
             onErrorHandling?(ErrorResult.custom(string: LocalizableStrings.missingService.localized))
             return

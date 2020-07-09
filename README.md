@@ -61,4 +61,4 @@ Added reachability Library
 
 7. Added Error view when there is any error while loading the facts
 
-8. 
+8. Dark mode label color issue fixed. You can use the application in dark mode too

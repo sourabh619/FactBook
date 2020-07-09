@@ -13,6 +13,9 @@ class BasicLabel: UILabel {
     
     init() {
         super.init(frame: .zero)
+        
+        self.textColor = Constants.Theme.Color.darkColor
+        
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
             self.font = Constants.Theme.Font.smallBold
