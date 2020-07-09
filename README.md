@@ -59,4 +59,4 @@ Added reachability Library
 
 - Generic value given a more sensible name
 
-
+7. Added Error view when there is any error while loading the facts

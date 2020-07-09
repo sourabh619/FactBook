@@ -14,6 +14,7 @@ class FactsViewController: UIViewController {
     private let delegate = FactsDelegate()
     private var containerView: FactListContainer!
     private let refreshControl = UIRefreshControl()
+    private var errorView:ErrorView?
     
     lazy private var viewModel: FactsViewModel = {
         let viewModel = FactsViewModel(dataSource: dataSource, delegate: delegate)
@@ -50,6 +51,7 @@ class FactsViewController: UIViewController {
     private func setUpListeners() {
         self.dataSource.data.addObserver(self) {[weak self] (factInfo) in
             DispatchQueue.main.async {
+                self?.hideErrorView()
                 self?.title = factInfo.first?.title ?? ""
                 self?.refreshControl.endRefreshing()
                 self?.containerView.reloadData()
@@ -59,10 +61,36 @@ class FactsViewController: UIViewController {
         self.viewModel.onErrorHandling = { [weak self] error in
             DispatchQueue.main.async {
                 self?.refreshControl.endRefreshing()
-                AppHelper.shared.showAlert(on: self, retryAction: {[weak self] _ in
-                    self?.viewModel.fetchFacts()
-                })
+                if self?.viewModel.dataCount() == 0 {
+                    self?.showErrorView()
+                }
             }
         }
+    }
+    
+    private func showErrorView() {
+        self.hideErrorView()
+        errorView = ErrorView(frame: .zero)
+        errorView?.delegate = self
+        errorView?.translatesAutoresizingMaskIntoConstraints = false
+        guard let errorView = errorView else {return}
+        view.addSubview(errorView)
+        
+        errorView.topAnchor.constraint(equalTo: self.containerView.topAnchor, constant:0).isActive = true
+        errorView.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant:0).isActive = true
+        errorView.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor, constant:0).isActive = true
+        errorView.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor, constant:0).isActive = true
+        self.view.layoutIfNeeded()
+    }
+    
+    private func hideErrorView() {
+        self.errorView?.removeFromSuperview()
+        self.errorView = nil
+    }
+}
+
+extension FactsViewController: ErrorViewDelegate {
+    func refreshButtonAction() {
+        self.viewModel.fetchFacts()
     }
 }

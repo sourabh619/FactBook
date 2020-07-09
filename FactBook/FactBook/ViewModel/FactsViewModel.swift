@@ -40,4 +40,8 @@ struct FactsViewModel {
         }
     }
     
+    func dataCount() -> Int {
+        return dataSource?.data.value.first?.facts.count ?? 0
+    }
+    
 }

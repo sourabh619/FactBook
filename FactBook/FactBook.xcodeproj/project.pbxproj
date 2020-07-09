@@ -43,6 +43,7 @@
 		8B8A836424B72C33001792CF /* FactBookDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836324B72C33001792CF /* FactBookDataSourceTests.swift */; };
 		8B8A836624B72C5B001792CF /* FactBookServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836524B72C5B001792CF /* FactBookServiceTests.swift */; };
 		8B8A836824B72C7A001792CF /* FactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836724B72C7A001792CF /* FactTests.swift */; };
+		8B8A836A24B741AA001792CF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A836924B741AA001792CF /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		8B8A836324B72C33001792CF /* FactBookDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookDataSourceTests.swift; sourceTree = "<group>"; };
 		8B8A836524B72C5B001792CF /* FactBookServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactBookServiceTests.swift; sourceTree = "<group>"; };
 		8B8A836724B72C7A001792CF /* FactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTests.swift; sourceTree = "<group>"; };
+		8B8A836924B741AA001792CF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C1DA2BB133C7D9666A5746CD /* Pods-FactBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.release.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.release.xcconfig"; sourceTree = "<group>"; };
 		E9FA1012C75EC95626D9203D /* Pods-FactBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactBook.debug.xcconfig"; path = "Target Support Files/Pods-FactBook/Pods-FactBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,6 +272,7 @@
 				8B8A835924B70C6D001792CF /* UILabel+Extensions.swift */,
 				8B8A835B24B70CB5001792CF /* UIView+Extensions.swift */,
 				8B8A835D24B70CD7001792CF /* UIImageView+Extensions.swift */,
+				8B8A836924B741AA001792CF /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				8B8A835E24B70CD7001792CF /* UIImageView+Extensions.swift in Sources */,
 				8B8A833824B6CEFC001792CF /* GenericDelegate.swift in Sources */,
 				8B8A832E24B6C90B001792CF /* Constants.swift in Sources */,
+				8B8A836A24B741AA001792CF /* ErrorView.swift in Sources */,
 				8B8A835C24B70CB5001792CF /* UIView+Extensions.swift in Sources */,
 				8B8A833024B6CC6F001792CF /* Fact.swift in Sources */,
 				8B8A82F024B6BDAB001792CF /* AppDelegate.swift in Sources */,
